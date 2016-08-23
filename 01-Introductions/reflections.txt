@@ -1,0 +1,5 @@
+Notas:
+	En la sección denominada "Introductions" se presenta el instructor, enseña lo que se va a enseñar en el
+	curso, anticipa que se verá un breve resumen sobre funciones y que se verá el tema de la programación
+	orientada a objetos.
+	Finalmente el instructor enseña cómo instalar python en nuestra computadora.
