@@ -1,0 +1,11 @@
+NOTAS:
+	1.En el capítulo se construirán dos proyectos relacionados al uso de funciones.
+	2.Al final de la sección se monstrará que las funciones no siempre son una forma elegante de desarrollar
+	  software, teniendo eso en mente se pavimenta el camino para en la siguiente sección aprender sobre
+	  clases y el concepto en general sobre la programación orientada a objetos.
+
+
+PRIMER PROYECTO:
+	1.Escribir un programa que recuerde al usuario de un computador tomar un descanso luego de un
+	  largo momento de trabajo frente al computador, un programa que le recuerde al usuario que debe realizar
+	  otras actividades y tomar un descanso, quizá simplemente alejarse de la computadora momentaneamente.
