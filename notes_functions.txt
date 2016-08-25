@@ -1,0 +1,16 @@
+FUNCTIONS FROM CLASSES:
+
+class time -> ctime()
+              Named after: "current time"
+	      This function converts current time expressed in seconds to a string representing local time.
+	      If an argument isn't provided, ctime will just use the current time in seconds and return
+	      the current time string.
+	      If an argument is provided (an int representing the seconds), it is transformed to a string
+	      representing the time according to the argument provided.
+	      IMPORTANT: Locale information is not used by ctime().
+
+class webbrowser -> open()
+                    Named after: "open"
+		    This function requires an string argument specifing the URL of a particular webpage to
+		    open the default web-browser the operating system is set to use so that the URL provided
+		    is opened with that browser.
