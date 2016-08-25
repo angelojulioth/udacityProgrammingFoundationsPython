@@ -10,6 +10,7 @@ break_count = 0
 
 # Mostrar la fecha y la hora en la que se inicia el programa mediante la función
 # ctime de la clase time
+# ctime fue nombrado por "current time"
 print ("This program started on " + time.ctime())
 
 # LOOP -> Mientras el contador sea menor al máximo de veces que se repite el loop
