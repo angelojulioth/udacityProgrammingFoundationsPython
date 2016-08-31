@@ -22,7 +22,10 @@ def rename_files():
 	# en la que se encuentran dichos archivos.
 	print("Current working directory is: " + saved_path)
 	# Cambiar la ruta de directorio de trabajo actual a la ruta en la que se encuentran los archivos a renombrar.
-	os.chdir(r"C:\Users\angelojulioth\gitRepos\udacityProgrammingFoundationsPython\02-UseFunctions\prank")	
+	# En este caso, al ser una subcarpeta del directorio actual, primero se obtiene la cadena del directorio de trabajo
+	# actual y luego se le concatena la cadena con el nombre del sub-directorio
+	os.chdir(os.getcwd() + "/prank")
+
 	# Imprimir la nueva ruta de directorio de trabajo actual(el directorio al que se acaba de cambiar)
 	print("The new current working directory is: " + os.getcwd())
 
