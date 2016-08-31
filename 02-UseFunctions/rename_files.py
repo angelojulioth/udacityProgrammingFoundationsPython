@@ -12,10 +12,30 @@ import os
 def rename_files():
 	#(1) get file names from a folder
 	file_list = os.listdir(r"C:\Users\angelojulioth\gitRepos\udacityProgrammingFoundationsPython\02-UseFunctions\prank")
-	print(file_list)
+	# print(file_list)
+
+	# Obtener y guardar el directorio de trabajo actual(current working directory)
+	saved_path = os.getcwd()
+	# Imprimir la ruta del directorio de trabajo actual.
+	# El directorio actual es el directorio en el que se encuentra el script, entonces para poder
+	# accesar a los archivos requeridos, se necesita cambiar el directorio de trabajo actual a la ruta
+	# en la que se encuentran dichos archivos.
+	print("Current working directory is: " + saved_path)
+	# Cambiar la ruta de directorio de trabajo actual a la ruta en la que se encuentran los archivos a renombrar.
+	os.chdir(r"C:\Users\angelojulioth\gitRepos\udacityProgrammingFoundationsPython\02-UseFunctions\prank")	
+	# Imprimir la nueva ruta de directorio de trabajo actual(el directorio al que se acaba de cambiar)
+	print("The new current working directory is: " + os.getcwd())
 
 	#(2) for each file, rename filename
+	for file_name in file_list:
+		os.rename(file_name, file_name.translate(None, "0123456789"))
+	
+	# Retornar al directorio de trabajo original(el directorio en el que se encuentra este script)
+	os.chdir(saved_path)
+	# Imprimir el directorio de trabajo actual.
+	print("Current working directory switched to original path: " + saved_path)
 
+	print("Operation successfuly done")
 
 # Ejecutar la función anteriormente implementada.
 rename_files()
