@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Este programa renombra archivos, particularmente este servirá para quitar la parte numérica y dejar
 # las partes alfabéticas de un conjunto de archivos que se encuentra en un determinado directorio.
 
@@ -11,7 +13,7 @@ import os
 # Definir función que realiza la implementación de lo anteriormente mencionado.
 def rename_files():
 	#(1) get file names from a folder
-	file_list = os.listdir(r"C:\Users\angelojulioth\gitRepos\udacityProgrammingFoundationsPython\02-UseFunctions\prank")
+	file_list = os.listdir(os.getcwd() + "/prank")
 	# print(file_list)
 
 	# Obtener y guardar el directorio de trabajo actual(current working directory)
