@@ -31,6 +31,11 @@ def rename_files():
 
 	#(2) for each file, rename filename
 	for file_name in file_list:
+		# print name of the current file to rename.
+		print("Current file name: " + file_name)
+		# print the new_name of the current file
+		print("-> Renamed to: " + file_name.translate(None, "0123456789"))
+		# rename the file
 		os.rename(file_name, file_name.translate(None, "0123456789"))
 	
 	# Retornar al directorio de trabajo original(el directorio en el que se encuentra este script)
