@@ -1,0 +1,15 @@
+ISSUE 1
+   It seems like there is some kind of problem with the encoding for files with python2.7
+   It seems like utf-8 is not used as default but ascii, so non-ascii characters cause problems while
+   executing the program, for this reason, the encoding should be set at the start of the script as
+   utf-8 with the following comment:
+   	# -*- coding: utf-8 -*-
+   If this step is made, then the file can be opened correctly by IDLE and can be executed with no
+   problem while using non-ascii characters.
+
+   The ERROR issued by the program when this is not corrected is the following:
+   "SyntaxError: Non-ASCII character '\xa3' in file 'blah' but no encoding declared;
+    see http://www.python.org/peps/pep-0263.html for details"
+
+   It may be useful to CHECK the link provided by the error:
+   https://www.python.org/dev/peps/pep-0263/
