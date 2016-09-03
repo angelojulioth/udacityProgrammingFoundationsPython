@@ -1,0 +1,49 @@
+FUNCTIONS FROM CLASSES:
+
+- FROM PYTHON STANDARD LIBRARY -
+
+class time -> ctime()
+              Named after: "current time"
+	      This function converts current time expressed in seconds to a string representing local time.
+	      If an argument isn't provided, ctime will just use the current time in seconds and return
+	      the current time string.
+	      If an argument is provided (an int representing the seconds), it is transformed to a string
+	      representing the time according to the argument provided.
+	      IMPORTANT: Locale information is not used by ctime().
+
+	      - SYNTAX -
+	        time.ctime([secs])
+
+	      - paramenters -
+	        secs -- OPTIONAL PARAMETER - (If provided) This is the number of seconds the function uses
+		        in order to transform it to a string representing the current time.
+	      
+	      -----------------------------------------------------------------------------------------------
+	      sleep()
+	      Named after: "sleep"
+	      This function suspends execution for a determined (by the programmer) number of seconds.
+	      The argument may be a floating point number in order to indicate a more precise sleep time, or
+	      an integer to represent seconds.
+
+	      - SYNTAX -
+	        time.sleep(time)
+
+	      - parameters -
+	        time -- REQUIRED PARAMETER - This is the number of seconds the execution to be suspended.
+		        A floating point argument can be used to represent time more precisely, otherwise
+			just provide an integer when calling the function.
+
+	      -----------------------------------------------------------------------------------------------
+
+class webbrowser -> open()
+                    Named after: "open"
+		    This function requires an string argument specifing the URL of a particular webpage to
+		    open the default web-browser the operating system is set to use so that the URL provided
+		    is opened with that browser.
+
+		    - SYNTAX -
+		      webbrowser.open(URL)
+
+		    - parameters -
+		      URL -- REQUIRED PARAMETER - This is the URL (provided as a string) to be opened by the
+		             default browser as set by the operating system.
