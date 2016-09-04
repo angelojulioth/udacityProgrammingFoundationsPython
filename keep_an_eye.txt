@@ -17,3 +17,12 @@ ISSUE 1
 TO KEEP AN EYE ON:
 	* This site ranks the most popular external python packages -> http://pypi-ranking.info/alltime
 	* External python packages can be installed with easy_install or pip
+	* Remember how the "from" keyword works, it let's import a module(a folder containing
+	  an __init__.py file) or an atribute or function from a module. Example:
+	  
+	  Importing a whole module:
+	  from parentFolder import module
+
+	  Importin a class from a module(same applies to functions):
+	  from parentFolder.module import this_is_a_class
+	* Research the way python modules work.
