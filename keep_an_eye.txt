@@ -15,4 +15,5 @@ ISSUE 1
    https://www.python.org/dev/peps/pep-0263/
 
 TO KEEP AN EYE ON:
-	This site ranks the most popular external python packages -> http://pypi-ranking.info/alltime
+	* This site ranks the most popular external python packages -> http://pypi-ranking.info/alltime
+	* External python packages can be installed with easy_install or pip
