@@ -1,0 +1,2 @@
+1. This section uses an external package called twilio, this packages provide worldwide
+   SMS service, it can be installed with pip or easy_install.
