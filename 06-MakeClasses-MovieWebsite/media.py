@@ -3,6 +3,13 @@
 import webbrowser
 
 class Movie():
+	# definir la variable de clase(que se coloca fuera de las funciones) que
+	# almacenará las posibles clasificaciones válidas para todas las películas
+	# Cuando se define una constante(cuyo valor no cambia), el styleguide de código
+	# python creado por Google, dice que su identificador(nombre) debe estar escrito
+	# en mayúsculas
+	VALID_RATINGS = ["G", "PG", "PG-13", "R"]
+
 	# definir la función constructor, llamada automáticamente al crear una instancia
 	# recordar pasar self como argumento, puesto a que self hace referencia a la
 	# dirección en memoria en la que se encuentra una instancia de esta clase al ser
